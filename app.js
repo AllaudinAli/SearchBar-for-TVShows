@@ -1,3 +1,4 @@
+//Using Axios to fetch APIs
 const form = document.getElementById('searchForm');
 form.addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -6,10 +7,12 @@ form.addEventListener('submit', async function (e) {
     appendImages(res.data);
     form.elements.query.value = ' ';
 })
+
+//Creating a new image tag with each result shown
 const con = document.querySelector('container');
 const appendImages = (shows) => {
-    for(let result of shows){
-        if(result.show.image){
+    for (let result of shows) {
+        if (result.show.image) {
             const img = document.createElement('IMG');
             img.src = result.show.image.medium;
             document.body.append(img);
