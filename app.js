@@ -7,7 +7,6 @@ form.addEventListener('submit', async function (e) {
     appendImages(res.data);
     form.elements.query.value = ' ';
 })
-
 //Creating a new image tag with each result shown
 const appendImages = (shows) => {
     for (let result of shows) {
