@@ -1,4 +1,22 @@
-*{
+.container{
+    background-color: rgb(221, 126, 32);
+    padding: 2%;
     margin: 5%;
     border-radius: 25px;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(182, 88, 1);
+}
+.preview{
+    background-color: aliceblue;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 25px;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(182, 88, 1);
+    align-content: center;
+}
+img{
+    padding: 1rem;
 }

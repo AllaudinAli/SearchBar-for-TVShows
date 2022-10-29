@@ -9,13 +9,12 @@ form.addEventListener('submit', async function (e) {
 })
 
 //Creating a new image tag with each result shown
-const con = document.querySelector('container');
 const appendImages = (shows) => {
     for (let result of shows) {
         if (result.show.image) {
             const img = document.createElement('IMG');
             img.src = result.show.image.medium;
-            document.body.append(img);
+            document.body.querySelector('.preview').append(img);
         }
     }
 }
